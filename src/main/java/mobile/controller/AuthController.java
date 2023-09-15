@@ -1,7 +1,7 @@
-package movie.shop.controller;
+package mobile.controller;
 
-import movie.shop.model.User;
-import movie.shop.repositories.UserRepository;
+import mobile.repositories.UserRepository;
+import mobile.model.User;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

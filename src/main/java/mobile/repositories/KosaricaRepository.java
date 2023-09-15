@@ -1,8 +1,8 @@
-package movie.shop.repositories;
+package mobile.repositories;
 
-import movie.shop.model.Kosarica;
-import movie.shop.model.Mobile;
-import movie.shop.model.User;
+import mobile.model.Kosarica;
+import mobile.model.Mobile;
+import mobile.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 

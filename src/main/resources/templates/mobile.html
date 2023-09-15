@@ -31,32 +31,35 @@
 <br>
 <div class="container">
     <h3 class="text-center mt-5">Svi mobiteli</h3>
-    <table class="table table-bordered mt-3 shadow-lg">
-        <thead>
-        <tr>
-            <th scope="col">ID mobitela</th>
-            <th scope="col">Model</th>
-            <th scope="col">Kategorija</th>
-            <th scope="col">Specifikacije</th>
-            <th scope="col">Cijena</th>
-            <th scope="col">Izbrisi</th>
-            <th scope="col">Uredi</th>
-            <th scope="col">Kupi</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr  th:each="mobile: ${mobiles}">
-            <th scope="row" th:text="${mobile.getId()}">1</th>
-            <td th:text="${mobile.getName()}"></td>
-            <td th:text="${mobile.getCategory().getName()}"></td>
-            <td th:text="${mobile.getOpis()}"></td>
-            <td th:text="${mobile.getCijena()} + ' €'"></td>
-            <td><a data-toggle="tooltip" data-placement="top" title="Izbrisi" class="btn btn-sm btn-outline-danger mt-1 w-100" th:href="@{/mobile/delete/{id}(id=${mobile.getId()})}">Izbrisi</a></td>
-            <td><a data-toggle="tooltip" data-placement="top" title="Uredi" class="btn btn-sm btn-outline-warning mt-1 w-100" th:href="@{/mobile/edit/{id}(id=${mobile.getId()})}">Uredi</a></td>
-            <td> <a data-toggle="tooltip" data-placement="top" title="Za gledati kasnije" class="btn btn-sm btn-outline-primary mt-1 w-100" th:href="@{/kosarica/{id}(id=${mobile.getId()})}">Dodaj</a></td>
-        </tr>
-        </tbody>
+    <table class="table-responsive">
+        <table class="table table-bordered mt-3 shadow-lg">
+            <thead>
+            <tr>
+                <th scope="col">ID mobitela</th>
+                <th scope="col">Model</th>
+                <th scope="col">Kategorija</th>
+                <th scope="col">Specifikacije</th>
+                <th scope="col">Cijena</th>
+                <th scope="col">Izbrisi</th>
+                <th scope="col">Uredi</th>
+                <th scope="col">Kupi</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr  th:each="mobile: ${mobiles}">
+                <th scope="row" th:text="${mobile.getId()}">1</th>
+                <td th:text="${mobile.getName()}"></td>
+                <td th:text="${mobile.getCategory().getName()}"></td>
+                <td th:text="${mobile.getOpis()}"></td>
+                <td th:text="${mobile.getCijena()} + ' €'"></td>
+                <td><a data-toggle="tooltip" data-placement="top" title="Izbrisi" class="btn btn-sm btn-outline-danger mt-1 w-100" th:href="@{/mobile/delete/{id}(id=${mobile.getId()})}">Izbrisi</a></td>
+                <td><a data-toggle="tooltip" data-placement="top" title="Uredi" class="btn btn-sm btn-outline-warning mt-1 w-100" th:href="@{/mobile/edit/{id}(id=${mobile.getId()})}">Uredi</a></td>
+                <td> <a data-toggle="tooltip" data-placement="top" title="Za gledati kasnije" class="btn btn-sm btn-outline-primary mt-1 w-100" th:href="@{/kosarica/{id}(id=${mobile.getId()})}">Dodaj</a></td>
+            </tr>
+            </tbody>
+        </table>
     </table>
+
 </div>
 
     <script type="text/javascript">

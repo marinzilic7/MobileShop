@@ -1,6 +1,6 @@
-package movie.shop.repositories;
+package mobile.repositories;
 
-import movie.shop.model.Mobile;
+import mobile.model.Mobile;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface MobileRepository extends JpaRepository <Mobile, Long> {}

@@ -1,10 +1,11 @@
-package movie.shop.controller;
-import movie.shop.model.*;
-import movie.shop.repositories.CategoryRepository;
-import movie.shop.repositories.MobileRepository;
-import movie.shop.repositories.UserRepository;
+package mobile.controller;
+import mobile.model.*;
+import mobile.repositories.MobileRepository;
+import mobile.repositories.UserRepository;
+import mobile.model.*;
+import mobile.repositories.CategoryRepository;
 import jakarta.validation.Valid;
-import movie.shop.repositories.KosaricaRepository;
+import mobile.repositories.KosaricaRepository;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.security.core.Authentication;
 import org.springframework.beans.factory.annotation.Autowired;

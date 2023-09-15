@@ -1,4 +1,4 @@
-package movie.shop.model;
+package mobile.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;

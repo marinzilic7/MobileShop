@@ -1,11 +1,15 @@
-package movie.shop.controller;
+package mobile.controller;
 
 
-import movie.shop.model.*;
-import movie.shop.repositories.CategoryRepository;
-import movie.shop.repositories.MobileRepository;
-import movie.shop.repositories.UserRepository;
-import movie.shop.repositories.KosaricaRepository;
+import mobile.model.Kosarica;
+import mobile.model.Mobile;
+import mobile.model.User;
+import mobile.model.UserDetails;
+import mobile.repositories.CategoryRepository;
+import mobile.repositories.MobileRepository;
+import mobile.repositories.UserRepository;
+import mobile.model.*;
+import mobile.repositories.KosaricaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;

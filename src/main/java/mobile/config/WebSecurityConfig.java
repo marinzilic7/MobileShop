@@ -1,8 +1,8 @@
-package movie.shop.config;
+package mobile.config;
 
 import javax.sql.DataSource;
 
-import movie.shop.services.UserDetailsService;
+import mobile.services.UserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
