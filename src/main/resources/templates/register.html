@@ -51,7 +51,7 @@
             <input class="form-control inputPolje" th:classappend="${#fields.hasErrors('passwordRepeat') ? 'is-invalid' : ''}" type="password" placeholder="Ponovite Vašu lozinku" th:field="*{passwordRepeat}" />
             <div th:if="${#fields.hasErrors('passwordRepeat')}" th:errors="*{passwordRepeat}" class="invalid-feedback"></div> <!-- Ukoliko ima greški vezanih uz ime korisnika prikaži ih.  -->
           </div>
-          <button type="submit" class=" btn-primary mt-5 p-2 col-12 ">Registriraj se</button>
+          <button type="submit" class=" btn btn-primary mt-5 p-2 col-12 ">Registriraj se</button>
         </form>
       </div>
     </div>
