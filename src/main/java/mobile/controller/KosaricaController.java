@@ -50,9 +50,7 @@ public class KosaricaController {
         model.addAttribute("added", false);
         model.addAttribute("activeLink", "Igre");
         User userr = userDetails.getUser();
-        System.out.println("User je" + userr);
         Long userIdd = user.getUserId();
-        System.out.println("ID korisnika: " + userIdd);
         List<Kosarica> kosarice= kosaricaRepository.findByCreatedBy(userDetails.getUser());
 
         int kosaraBroj = kosarice.size();
@@ -65,7 +63,7 @@ public class KosaricaController {
             model.addAttribute("prikazi", false);
         }
 
-        return "/kosarica";
+        return "kosarica";
     }
 
 
